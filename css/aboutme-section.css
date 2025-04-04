@@ -1,0 +1,45 @@
+.aboutme-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.text-aboutme {
+  display: grid;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.aboutme-h1 {
+  /* font-size: 10.625rem; */
+  font-size: clamp(4rem, 10vw, 10.625rem);
+  font-family: "DM Serif Display";
+}
+
+.aboutme-h2 {
+  /* font-size: 3.125rem; */
+  font-size: clamp(2rem, 5vw, 3.125rem);
+  font-family: "DM Serif Display";
+}
+
+.aboutme-para {
+  width: 550px;
+  /* font-size: 1.875rem; */
+  font-size: clamp(1rem, 3vw, 1.875rem);
+  font-family: "Open Sans", sans-serif;
+}

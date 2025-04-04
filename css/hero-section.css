@@ -1,0 +1,42 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 89vh;
+  padding-bottom: 30px;
+  padding-left: 140px;
+}
+
+.hero-text-div {
+  width: 600px;
+}
+
+.hero-text {
+  font-size: clamp(1rem, 3vw, 1.875rem);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+
+  animation-duration: 1s;
+  animation-name: text-fadein;
+}
+
+.hero-h1 {
+  font-size: clamp(4rem, 10vw, 10.625rem);
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 100;
+
+  animation-duration: 1s;
+  animation-name: text-fadein;
+}
+
+@keyframes text-fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
