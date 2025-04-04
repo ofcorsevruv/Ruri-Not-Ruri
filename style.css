@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(300deg, #fffb00, #ffffff);
+  background-size: 180% 180%;
+
+  animation-duration: 15s;
+  animation-name: gradient-animation;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+    /* background-color: aquamarine; */
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+
+  animation-duration: 1s;
+  animation-name: text-fadeout;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.left-nav a {
+  padding: 20px;
+}
+
+@keyframes text-fadeout {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 89vh;
+  padding-bottom: 30px;
+  padding-left: 140px;
+}
+
+.hero-text-div {
+  width: 600px;
+}
+
+.hero-text {
+  font-size: clamp(1rem, 3vw, 1.875rem);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+
+  animation-duration: 1s;
+  animation-name: text-fadein;
+}
+
+.hero-h1 {
+  font-size: clamp(4rem, 10vw, 10.625rem);
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 100;
+
+  animation-duration: 1s;
+  animation-name: text-fadein;
+}
+
+@keyframes text-fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.aboutme-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.text-aboutme {
+  display: grid;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.aboutme-h1 {
+  /* font-size: 10.625rem; */
+  font-size: clamp(4rem, 10vw, 10.625rem);
+  font-family: "DM Serif Display";
+}
+
+.aboutme-h2 {
+  /* font-size: 3.125rem; */
+  font-size: clamp(2rem, 5vw, 3.125rem);
+  font-family: "DM Serif Display";
+}
+
+.aboutme-para {
+  width: 550px;
+  /* font-size: 1.875rem; */
+  font-size: clamp(1rem, 3vw, 1.875rem);
+  font-family: "Open Sans", sans-serif;
+}
+
+.portfolio-container {
+  padding: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.portfolio-parent-div {
+  display: flex;
+  width: 70%;
+  gap: 60px;
+}
+
+.portfolio-img {
+  height: 250px;
+  width: 270px;
+  border-radius: 40px;
+}
+
+.portfolio-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-text-section h2 {
+  font-family: "DM Serif Display";
+  font-size: 50px;
+}
+
+.portfolio-text-section p {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text-style {
+  font-family: "Open Sans", sans-serif;
+}
